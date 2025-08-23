@@ -14,8 +14,8 @@ from dotenv import load_dotenv
 import streamlit as st
 import os
 
-DATA_DIR = "/Users/nnaumova/Desktop/Data Science Course/Projects/comchatbot/data"              # data directory
-PERSIST_DIR = "/Users/nnaumova/Desktop/Data Science Course/Projects/comchatbot/vector_index"   # directiry for index
+DATA_DIR = "./data"              # data directory
+PERSIST_DIR = "./vector_index"   # directiry for index
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 load_dotenv()
@@ -26,7 +26,7 @@ llm = Groq(model="llama-3.1-8b-instant", api_key=GROQ_API_KEY)
 
 embeddings = HuggingFaceEmbedding(
     model_name=EMBEDDING_MODEL,
-    cache_folder="/Users/nnaumova/Desktop/Data Science Course/Projects/comchatbot/embedding_model"
+    cache_folder="./embedding_model"
 )
 
 def get_or_create_index():
