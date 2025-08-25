@@ -1,6 +1,6 @@
 **Marxist Chatbot (Streamlit + LlamaIndex)**
 
-An interactive chatbot that answers questions about economics, politics, and society, drawing on Karl Marx’s works (Capital and others).
+An interactive chatbot that answers questions about economics, politics, and society, drawing on Karl Marx’s Capital.
 Built with Streamlit and powered by LlamaIndex for retrieval-augmented generation (RAG).
 
 **Features**
